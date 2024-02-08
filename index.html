@@ -1,11 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
 <head> 
-	<title>TP_Frame</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP_Frame</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh; 
+      overflow-x: hidden;
+	}
+
+    #left-column, #right-column {
+      flex: 1; 
+      border: 1px solid #ccc; 
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
 
-<iframe src="lien.html" width="100%" name="f1"></iframe>
-<iframe src="page1.html" width="100%" name="f2"></iframe>
+<div id="left-column">
+  <iframe src="lien.html" name="f1"></iframe>
+</div>
+
+<div id="right-column">
+  <iframe src="page1.html" name="f2"></iframe>
+</div>
 
 </body>
 </html>
